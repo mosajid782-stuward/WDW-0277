@@ -10,8 +10,9 @@
         <h1 align="center">ABC College Admission 2026</h1>
     </header>
     <hr>
+    <main>
     <h2 align="center">Course and Fees</h2>
-    <table  align="center" border="1" cellpadding="10" cellspacing="0" width="80%">
+    <table  align="center" border="1" cellpadding="10" cellspacing="0" width="100%">
         <caption align="center"><big><b>Avaliable Courses</b></big></caption>
         <thead>
         <tr>
@@ -33,5 +34,31 @@
         </tr>
         </tbody>
     </table>
+    <!--Application Form-->
+    <h3><b>Application Form...</b></h3>
+    <form>
+        <lebel for="fullname">Name:<br></lebel>
+        <input type="text" id="fullname" name="fullname" required placeholder="Enter Full Name">
+        <br><br>
+        <lebel for="email">Email:<br></lebel>
+        <input type="email" id="email" name="email" required placeholder="Enter valid Email Address">
+        <br><br>
+        <lebel for="course">Course:<br></lebel>
+        <select id="course" name="course" required>
+            <option value="">Select Course</option>
+            <option value="btech">B.Tech</option>
+            <option value="bca">BCA</option>
+            <option value="mba">MBA</option>
+            <option value="mca">MCA</option>
+        </select>
+        <br><br>
+        <lebel for="statement">Statement:<br></lebel>
+        <textarea cols="40" rows="4" name="statement" required></textarea>
+        <br><br>
+        <input type="submit" value="Apply">
+        <br>
+    </form>
+    </main>
+    <hr>
 </body>
 </html>
